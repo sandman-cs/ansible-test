@@ -4,4 +4,4 @@
     - name: Install collection community.network
       ansible_galaxy_install:
         type: collection
-        name: community.network
+        name: community
