@@ -52,12 +52,14 @@ EXAMPLES = r'''
 - name: Simple Usage
   community.general.syslogger:
     msg: "I will end up as daemon.info"
+
 - name: Send a log message with err priority and user facility with log_pid
   community.general.syslogger:
     msg: "Hello from Ansible"
     priority: "err"
     facility: "user"
     log_pid: true
+
 - name: Specify the name of application which is sending log message
   community.general.syslogger:
     ident: "MyApp"
@@ -187,18 +189,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-community.general/syslogger.py at main · ansible-collections/community.general · GitHub
