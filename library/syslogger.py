@@ -4,6 +4,8 @@
 # GNU General Public License v3.0+ (see LICENSES/GPL-3.0-or-later.txt or https://www.gnu.org/licenses/gpl-3.0.txt)
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+import socket
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
@@ -170,6 +172,9 @@ def main():
         log_pid=module.params['log_pid'],
         msg=module.params['msg']
     )
+
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP
+    sock.sendto(bytes(result, "utf-8"), ("172.22.24.55", 8514))
 
     # do the logging
     try:
