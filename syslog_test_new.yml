@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: Simple Usage
-      community.general.syslogger:
+      syslogger:
         msg: "I will end up as daemon.info"
