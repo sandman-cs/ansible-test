@@ -172,10 +172,7 @@ def main():
         log_pid=module.params['log_pid'],
         msg=module.params['msg']
     )
-
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP
-    sock.sendto(bytes(result, "utf-8"), ("172.22.24.55", 8514))
-
+    
     # do the logging
     try:
         syslog.openlog(module.params['ident'],
