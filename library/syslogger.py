@@ -1,34 +1,3 @@
-Skip to content
-Product
-Solutions
-Open Source
-Pricing
-Search
-Sign in
-Sign up
-ansible-collections
-/
-community.general
-Public
-Code
-Issues
-462
-Pull requests
-40
-Actions
-Projects
-Security
-Insights
-community.general/plugins/modules/syslogger.py /
-@felixfontein
-felixfontein Unflatmap community.general (#5461)
-…
-Latest commit b531ecd on Nov 2
- History
- 2 contributors
-@felixfontein@bcoca
-191 lines (170 sloc)  5.49 KB
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Copyright (c) 2017, Tim Rightnour <thegarbledone@gmail.com>
