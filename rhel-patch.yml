@@ -1,0 +1,7 @@
+ - name: Install Ansible Modules
+   hosts: all
+   tasks:
+    - name: Install collection community.network
+      ansible_galaxy_install:
+        type: collection
+        name: community
