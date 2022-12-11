@@ -1,5 +1,8 @@
 - name: Hello World Sample
   hosts: all
+  remote_user: ansible
+  vars:
+     ansible_ssh_private_key_file: "{{ key1 }}"
   tasks:
     - name: Simple Usage
       syslogger:
