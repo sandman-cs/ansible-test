@@ -4,7 +4,6 @@
   tasks: 
    - name: Create the app.conf configuration file
      template:
-       src:
-         url: "https://raw.githubusercontent.com/sandman-cs/ansible-test/main/app.conf.j2"
+       src: "app.conf.j2"
        dest: "/etc/app.conf"
   become: true 
