@@ -7,8 +7,8 @@
   - name: Clone the template
     vmware_guest:
       hostname: https://vcenter2.esilabs.com/
-      username: csandberg@esilabs.com
-      password: vmware
+#      username: csandberg@esilabs.com
+#      password: vmware
       validate_certs: False
       name: testvm_2
       template: template_el7
