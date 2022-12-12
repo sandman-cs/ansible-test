@@ -7,7 +7,7 @@
   - name: Clone the template
     vmware_guest:
       hostname: 192.0.2.44
-      username: administrator@vsphere.local
+      username: csandberg@esilabs.com
       password: vmware
       validate_certs: False
       name: testvm_2
