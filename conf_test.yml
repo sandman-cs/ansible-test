@@ -1,6 +1,5 @@
 - name: Ansible template example 
-  hosts: all
-  remote_user: ubuntu   # Using Remote host as ubuntu 
+  hosts: all 
   tasks: 
    - name: Create the app.conf configuration file
      template:
