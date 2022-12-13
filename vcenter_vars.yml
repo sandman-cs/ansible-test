@@ -1,0 +1,10 @@
+---
+vcenter_hostname: "vcenter2.esilabs.com"
+vcenter_datacenter: "BPIC_vcenter2"
+vcenter_validate_certs: false
+vcenter_username: "username@vsphere.local"
+vcenter_password: "MySecretPassword123"
+vm_name: "myvm"
+vcenter_destination_folder: "AAP_TEST"
+vm_state: "poweroff"
+vm_template: "aap-build-template"
