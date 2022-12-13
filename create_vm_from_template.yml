@@ -7,12 +7,12 @@
   - name: Clone the template
     vmware_guest:
       hostname: https://vcenter2.esilabs.com/
-#      username: csandberg@esilabs.com
+      username: csandberg@esilabs.com
 #      password: vmware
       validate_certs: False
-      name: testvm_2
-      template: template_el7
-      datacenter: DC1
-      folder: /DC1/vm
-      state: poweredon
-      wait_for_ip_address: yes
+      name: aap-testvm_2
+      template: aap-build-template
+      datacenter: BPIC_vcenter2
+      folder: /BPIC_vcenter2/aap-test
+      state: poweredoff
+      wait_for_ip_address: no
