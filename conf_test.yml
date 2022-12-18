@@ -3,6 +3,6 @@
   tasks: 
    - name: Create the app.conf configuration file
      template:
-       src: "app.conf.j2"
+       src: "../scripts/app.conf.j2"
        dest: "/etc/app.conf"
   become: true 
