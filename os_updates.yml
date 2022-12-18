@@ -9,16 +9,18 @@
       update_cache: yes
       update_only: yes
     register: yum_update_status
+    when: ansible_os_family == "RedHat"
 
   - name: Remove packates not needed anymore
     yum:
       autoremove: yes
+    when: ansible_os_family == "RedHat"
 
   - name: Reboot when packages were updated
     reboot:
     when: yum_update_status.changed
 
-- hosts: apt
+- hosts: all
   tasks:
   - name: Update all installed packages using APT module
     apt:
@@ -27,10 +29,12 @@
       update_cache: yes
       only_upgrade: yes
     register: apt_update_status
+    when: ansible_os_family == "Debian"
 
   - name: Remove packages not needed anymore
     apt:
       autoremove: yes
+    when: ansible_os_family == "DEbian"
 
   - name: Reboot when packages were updated
     reboot:
