@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Send a log message with err priority and user facility with log_pid
-      community.general.syslogger:
+      syslogger:
         msg: "Hello from Ansible"
         priority: "err"
         facility: "user"
