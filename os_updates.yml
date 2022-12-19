@@ -34,7 +34,7 @@
   - name: Remove packages not needed anymore
     apt:
       autoremove: yes
-    when: ansible_os_family == "DEbian"
+    when: ansible_os_family == "Debian"
 
   - name: Reboot when packages were updated
     reboot:
