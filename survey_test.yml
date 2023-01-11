@@ -1,0 +1,9 @@
+- name: Syslog Test
+  hosts: all
+  tasks:
+    - name: Send a log message with err priority and user facility with log_pid
+      syslogger:
+        msg: "Hello from Ansible"
+        priority: "err"
+        facility: "user"
+        log_pid: true
