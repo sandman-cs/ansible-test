@@ -2,8 +2,5 @@
   hosts: all
   tasks:
     - name: Get Response from Survey
-      syslogger:
-        msg: "Hello from Ansible"
-        priority: "err"
-        facility: "user"
-        log_pid: true
+      ansible.builtin.debug:
+      msg: Answer {{ who_said_who }} 
