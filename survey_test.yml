@@ -1,7 +1,7 @@
-- name: Syslog Test
+- name: Survey Test
   hosts: all
   tasks:
-    - name: Send a log message with err priority and user facility with log_pid
+    - name: Get Response from Survey
       syslogger:
         msg: "Hello from Ansible"
         priority: "err"
