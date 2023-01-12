@@ -3,4 +3,4 @@
   tasks:
     - name: Get Response from Survey
       ansible.builtin.debug:
-      msg: Answer {{ who_said_who }} 
+        msg: Answer {{ who_said_who }} 
