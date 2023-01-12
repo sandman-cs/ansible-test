@@ -10,5 +10,5 @@
       when: ansible_os_family == "RedHat"
     - name: Update all installed packages using YUM module
       debug: 
-        msg: RHEL System
+        msg: Debian System
       when: ansible_os_family == "Debian"
