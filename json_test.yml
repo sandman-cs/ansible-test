@@ -1,5 +1,18 @@
----
-- name: Display all cluster names
-  ansible.builtin.debug:
-    var: item
-  loop: "{{ domain_definition | community.general.json_query('response.result[*]') }}"
+- name: Using a REST API
+  become: true
+  hosts: all
+  gather_facts: false
+  tasks:
+    - debug:
+        msg: “Let’s call an API”
+    - name: Login to API
+      uri:
+        url: https://ven02986.service-now.com/api/now/table/change_request?sysparm_limit=1&number=CHG0030138
+        method: GET
+        url_username: "keyva"
+        url_password: "Keyva19!"
+        force_basic_auth: true
+      register: results
+    
+    - name: Print the number
+      debug: results
