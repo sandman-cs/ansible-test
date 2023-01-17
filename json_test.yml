@@ -1,0 +1,5 @@
+---
+- name: Display all cluster names
+  ansible.builtin.debug:
+    var: item
+  loop: "{{ domain_definition | community.general.json_query('response.result[*]') }}"
