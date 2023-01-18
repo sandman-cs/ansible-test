@@ -17,4 +17,4 @@
     
     - name: Print the number
       debug: 
-        msg: "{{ results }}"
+        msg: {{ results }}
