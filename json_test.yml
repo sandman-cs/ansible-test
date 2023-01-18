@@ -7,7 +7,7 @@
         msg: “Let’s call an API” 
     - name: Login to API
       uri:
-        url_username: "keyva"
+        url_username: "admin"
         url_password: "Keyva19!"
         force_basic_auth: true
         validate_certs: no
