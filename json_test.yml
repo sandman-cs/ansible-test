@@ -12,6 +12,7 @@
         url_username: "keyva"
         url_password: "Keyva19!"
         force_basic_auth: true
+        validate_certs: no
       register: results
     
     - name: Print the number
