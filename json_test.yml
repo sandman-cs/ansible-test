@@ -7,12 +7,12 @@
         msg: “Let’s call an API” 
     - name: Login to API
       uri:
-        url: https://ven02986.service-now.com/api/now/table/change_request?sysparm_limit=1&number=CHG0030138
-        method: GET
         url_username: "keyva"
         url_password: "Keyva19!"
         force_basic_auth: true
         validate_certs: no
+        url: https://ven02986.service-now.com/api/now/table/change_request?sysparm_limit=1&number=CHG0030138
+        method: GET
       register: results
     
     - name: Print the number
