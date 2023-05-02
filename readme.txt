@@ -1,5 +1,4 @@
 memcached
-keppalived
 Apache
 Tomcat
 
@@ -10,6 +9,7 @@ Postfres SQL
 RabbitMQ
 Redis
 
+Keepalived
 HA Proxy
 Lucidworks
 Solr
